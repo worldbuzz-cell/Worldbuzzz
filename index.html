@@ -1,124 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WorldBuzz News</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-    }
-    header {
-      background: #1a237e;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 28px;
-    }
-    nav {
-      background: #283593;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .container {
-      padding: 15px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .news {
-      background: white;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .news h2 {
-      margin-top: 0;
-      font-size: 22px;
-    }
-    .news img {
-      width: 100%;
-      border-radius: 5px;
-      margin: 10px 0;
-    }
-    .news p {
-      color: #444;
-      line-height: 1.6;
-    }
-    footer {
-      background: #212121;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorldBuzz News</title>
+<style>
+body { margin:0; font-family: Arial, sans-serif; background:#f2f2f2; }
+header { background:#1a237e; color:white; padding:15px; text-align:center; font-size:22px; font-weight:bold;}
+nav { background:#212121; padding:10px; text-align:center;}
+nav a { color:white; text-decoration:none; margin:0 10px; font-size:16px;}
+.container { padding:15px; max-width:800px; margin:auto; }
+article { background:white; padding:15px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px;}
+article img { width:100%; border-radius:8px; margin-bottom:10px; display:block; }
+article p { line-height:1.6; margin-bottom:15px; }
+footer { background:#212121; color:white; text-align:center; padding:10px; font-size:14px;}
+</style>
 </head>
-
 <body>
 
-  <header>WorldBuzz News</header>
+<header>WorldBuzz News</header>
 
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">India</a>
+  <a href="#">World</a>
+  <a href="#">Sports</a>
+  <a href="#">Tech</a>
+</nav>
 
-  <div class="container">
+<div class="container">
 
-    <div class="news">
-      <h2><a href="japan-earthquake.html">Massive Japan Earthquake</a></h2>
-      <img src="images/japan-earthquake-1.jpg" alt="Japan Earthquake">
-      <p>A strong earthquake shakes Japan, causing tremors felt across the region and prompting safety measures nationwide.</p>
-    </div>
+  <!-- Japan Article -->
+  <article>
+    <h1>Strong Earthquake Shakes Japan</h1>
+    <img src="images/japan-1.jpg" alt="Japan Earthquake 1">
+    <img src="images/japan-2.jpg" alt="Japan Earthquake 2">
+    <p>A strong earthquake shook Japan, causing tremors felt across the region and prompting safety measures nationwide. Authorities monitored aftershocks and advised residents to stay alert.</p>
+  </article>
 
-    <div class="news">
-      <h2><a href="tesla-new-car.html">Tesla Introduces New Car</a></h2>
-      <img src="images/tesla-car.jpg" alt="Tesla Car">
-      <p>Tesla introduces its latest electric vehicle, featuring advanced technology, improved battery life, and futuristic design.</p>
-    </div>
+  <!-- Tesla Article -->
+  <article>
+    <h1>Tesla Introduces New Car</h1>
+    <img src="images/tesla-1.jpg" alt="Tesla Car 1">
+    <img src="images/tesla-2.jpg" alt="Tesla Car 2">
+    <p>Tesla introduces its latest electric vehicle, featuring advanced technology, improved battery life, and futuristic design. Enthusiasts worldwide are excited about this launch.</p>
+  </article>
 
-    <div class="news">
-      <h2><a href="spacex-rocket.html">SpaceX Launches New Rocket</a></h2>
-      <img src="images/spacex-rocket.jpg" alt="SpaceX Rocket">
-      <p>SpaceX launched its newest rocket successfully, marking another milestone in private space exploration and technology.</p>
-    </div>
+  <!-- SpaceX Article -->
+  <article>
+    <h1>SpaceX Successfully Launches New Rocket</h1>
+    <img src="images/spacex-1.jpg" alt="SpaceX Rocket 1">
+    <img src="images/spacex-2.jpg" alt="SpaceX Rocket 2">
+    <p>SpaceX achieved another major milestone today with the successful launch of its newest rocket, designed to carry both crew and cargo into orbit. The mission marks a significant step in private space exploration.</p>
+  </article>
 
-    <div class="news">
-      <h2><a href="yoga-news.html">Yoga in Schools</a></h2>
-      <img src="images/yoga.jpg" alt="Yoga in Schools">
-      <p>Schools worldwide are now including yoga in their daily routine to promote health, mindfulness, and student well-being.</p>
-    </div>
+  <!-- Yoga Article -->
+  <article>
+    <h1>Health Benefits of Yoga</h1>
+    <img src="images/yoga-1.jpg" alt="Yoga Pose 1">
+    <img src="images/yoga-2.jpg" alt="Yoga Pose 2">
+    <p>Yoga improves mental and physical well-being, increases flexibility, reduces stress, and promotes a healthy lifestyle. Experts recommend daily practice for maximum benefits.</p>
+  </article>
 
-  </div>
+</div>
 
-  <footer>
-    © 2026 WorldBuzz News | All Rights Reserved
-  </footer>
+<footer>
+© 2026 WorldBuzz News | All Rights Reserved
+</footer>
 
-  <!-- Statcounter code -->
-  <script type="text/javascript">
-    var sc_project=13197188; 
-    var sc_invisible=1; 
-    var sc_security="390a99f4"; 
-  </script>
-  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-  <noscript>
-    <div class="statcounter">
-      <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" target="_blank">
-        <img class="statcounter" src="https://c.statcounter.com/13197188/0/390a99f4/1/" 
-        alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade">
-      </a>
-    </div>
-  </noscript>
-  <!-- End of Statcounter Code -->
+<!-- Statcounter Code -->
+<script type="text/javascript">
+var sc_project=13197188; 
+var sc_invisible=1; 
+var sc_security="390a99f4"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+<div class="statcounter">
+<a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" target="_blank">
+<img class="statcounter" src="https://c.statcounter.com/13197188/0/390a99f4/1/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade">
+</a>
+</div>
+</noscript>
 
 </body>
 </html>
